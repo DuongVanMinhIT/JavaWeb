@@ -15,7 +15,7 @@ import com.laptrinhjavaweb.model.NewsModel;
 import com.laptrinhjavaweb.service.ICategoryService;
 import com.laptrinhjavaweb.service.INewsService;
 
-@WebServlet(urlPatterns = {"/trang-chu"})
+@WebServlet(urlPatterns = {"/trang-chu","/dang-nhap"})
 public class HomeController extends HttpServlet{
 	@Inject
 	private ICategoryService<CategoryModel, Long> categotyService;
@@ -40,10 +40,19 @@ public class HomeController extends HttpServlet{
 //		newsModel.setTitle(title);
 //		newsModel.setContent(content);
 //		newService.Insert(newsModel);
-		req.setAttribute("categories", categotyService.FindAll());
+		String action = req.getParameter("action");
+		if(action != null && action.equals("login")) {
+			RequestDispatcher rd = req.getRequestDispatcher("/views/login.jsp");
+			rd.forward(req, resp);
+		}else if(action != null && action.equals("logout")) {
+			
+		}else {
+			req.setAttribute("categories", categotyService.FindAll());
+			
+			RequestDispatcher rd = req.getRequestDispatcher("/views/web/home.jsp");
+			rd.forward(req, resp);
+		}
 		
-		RequestDispatcher rd = req.getRequestDispatcher("/views/web/home.jsp");
-		rd.forward(req, resp);
 	}
 	
 	@Override

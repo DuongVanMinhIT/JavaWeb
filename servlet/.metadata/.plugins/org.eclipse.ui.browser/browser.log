@@ -230,3 +230,8 @@ Jun 20, 2020 22:02:44.72 Most likely you need to configure your SUID sandbox cor
 Jun 20, 2020 22:06:33.26 Opening in existing browser session.
 Jun 20, 2020 22:06:33.27 [0620/220633.276515:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
 Jun 20, 2020 22:06:33.27 Most likely you need to configure your SUID sandbox correctly
+
+Jun 20, 2020 23:11:08.09 NEW SESSION
+Jun 20, 2020 23:11:08.09 Opening in existing browser session.
+Jun 20, 2020 23:11:08.11 [0620/231108.109536:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 20, 2020 23:11:08.11 Most likely you need to configure your SUID sandbox correctly
