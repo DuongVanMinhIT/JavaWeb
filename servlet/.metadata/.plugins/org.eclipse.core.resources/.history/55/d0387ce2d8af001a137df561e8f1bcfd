@@ -1,0 +1,28 @@
+package com.laptrinhjavaweb.dao.impl;
+
+import java.sql.Connection;
+import java.util.List;
+import java.util.Locale.Category;
+
+import com.laptrinhjavaweb.dao.ICategoryDao;
+
+public class CategoryDao implements ICategoryDao<Category, Integer> {
+	
+	public Connection getConnection() {
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+		
+	}
+	@Override
+	public List<Category> FindAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

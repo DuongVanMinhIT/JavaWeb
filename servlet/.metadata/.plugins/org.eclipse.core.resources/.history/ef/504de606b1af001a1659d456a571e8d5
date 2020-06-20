@@ -1,0 +1,14 @@
+package com.laptrinhjavaweb.model;
+
+public class UserModel {
+	private long id;
+	private String username;
+	private String fullname;
+	private String password;
+	private int status;
+	private long role_id;
+	
+	
+	
+	
+}

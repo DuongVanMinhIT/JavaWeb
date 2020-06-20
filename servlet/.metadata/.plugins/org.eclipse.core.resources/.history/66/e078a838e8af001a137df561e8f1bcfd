@@ -1,0 +1,18 @@
+package com.laptrinhjavaweb.service.Impl;
+
+import java.util.List;
+
+import com.laptrinhjavaweb.model.NewsModel;
+import com.laptrinhjavaweb.service.INewsService;
+
+public class NewService implements  INewsService<NewsModel, Long>{
+
+	@Override
+	public List<NewsModel> findByCategoryId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

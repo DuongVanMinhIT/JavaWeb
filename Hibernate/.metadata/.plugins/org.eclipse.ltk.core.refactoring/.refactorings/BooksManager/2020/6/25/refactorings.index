@@ -1,0 +1,4 @@
+1592124374477	Move 'persistence.xml' to 'META-INF'
+1592124677202	Delete element
+1592127226434	Extract method 'create'
+1592127490419	Extract method 'End'

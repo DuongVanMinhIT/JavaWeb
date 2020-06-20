@@ -1,0 +1,232 @@
+
+Jun 15, 2020 17:51:16.63 NEW SESSION
+Jun 15, 2020 17:51:16.63 Opening in existing browser session.
+Jun 15, 2020 17:51:16.64 [0615/175116.637529:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 15, 2020 17:51:16.64 Most likely you need to configure your SUID sandbox correctly
+
+Jun 16, 2020 11:57:31.67 NEW SESSION
+Jun 16, 2020 11:57:31.67 Opening in existing browser session.
+Jun 16, 2020 11:57:31.68 [0616/115731.682205:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 16, 2020 11:57:31.68 Most likely you need to configure your SUID sandbox correctly
+Jun 16, 2020 14:44:30.77 Opening in existing browser session.
+Jun 16, 2020 14:44:30.78 [0616/144430.786939:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 16, 2020 14:44:30.78 Most likely you need to configure your SUID sandbox correctly
+Jun 16, 2020 17:19:59.88 Opening in existing browser session.
+Jun 16, 2020 17:19:59.91 [0616/171959.917895:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 16, 2020 17:19:59.91 Most likely you need to configure your SUID sandbox correctly
+
+Jun 16, 2020 22:02:56.94 NEW SESSION
+Jun 16, 2020 22:02:56.94 Opening in existing browser session.
+Jun 16, 2020 22:02:56.96 [0616/220256.959377:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 16, 2020 22:02:56.96 Most likely you need to configure your SUID sandbox correctly
+Jun 16, 2020 22:03:27.85 Opening in existing browser session.
+Jun 16, 2020 22:03:27.88 [0616/220327.882767:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 16, 2020 22:03:27.88 Most likely you need to configure your SUID sandbox correctly
+Jun 16, 2020 22:03:27.95 [6731:6731:0616/220327.956264:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 16, 2020 22:03:28.02 [6728:6728:0100/000000.021981:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 16, 2020 22:03:28.02 [6728:6728:0100/000000.022780:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 16, 2020 22:05:01.58 Opening in existing browser session.
+Jun 16, 2020 22:05:01.59 [0616/220501.593228:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 16, 2020 22:05:01.59 Most likely you need to configure your SUID sandbox correctly
+Jun 16, 2020 22:07:07.11 Opening in existing browser session.
+Jun 16, 2020 22:07:07.13 [0616/220707.131841:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 16, 2020 22:07:07.13 Most likely you need to configure your SUID sandbox correctly
+
+Jun 17, 2020 12:45:37.95 NEW SESSION
+Jun 17, 2020 12:45:37.95 Opening in existing browser session.
+Jun 17, 2020 12:45:37.96 [0617/124537.964529:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 12:45:37.96 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 12:47:13.29 Opening in existing browser session.
+Jun 17, 2020 12:47:13.30 [0617/124713.306145:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 12:47:13.30 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 12:47:13.33 [3865:3865:0617/124713.335706:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 17, 2020 12:51:36.05 Opening in existing browser session.
+Jun 17, 2020 12:51:36.06 [0617/125136.060168:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 12:51:36.06 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 14:03:59.63 Opening in existing browser session.
+Jun 17, 2020 14:03:59.66 [0617/140359.665641:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 14:03:59.66 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 14:04:57.18 Opening in existing browser session.
+Jun 17, 2020 14:04:57.19 [0617/140457.197444:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 14:04:57.19 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 14:43:21.79 Opening in existing browser session.
+Jun 17, 2020 14:43:21.83 [0617/144321.836178:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 14:43:21.83 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 14:44:55.85 Opening in existing browser session.
+Jun 17, 2020 14:44:55.87 [0617/144455.872309:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 14:44:55.87 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 15:21:14.22 Opening in existing browser session.
+Jun 17, 2020 15:21:14.23 [0617/152114.232673:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 15:21:14.23 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 15:21:14.31 [10000:10000:0617/152114.317044:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 17, 2020 15:21:14.35 [9997:9997:0100/000000.354623:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 17, 2020 15:21:14.35 [9997:9997:0100/000000.355334:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 17, 2020 16:36:16.64 Opening in existing browser session.
+Jun 17, 2020 16:36:16.69 [0617/163616.689829:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 16:36:16.69 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 16:38:45.37 Opening in existing browser session.
+Jun 17, 2020 16:38:45.38 [0617/163845.382416:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 16:38:45.38 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 16:40:51.39 Opening in existing browser session.
+Jun 17, 2020 16:40:51.40 [0617/164051.404542:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 16:40:51.40 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 17:13:06.57 Opening in existing browser session.
+Jun 17, 2020 17:13:06.58 [0617/171306.585905:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 17:13:06.58 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 17:17:03.79 Opening in existing browser session.
+Jun 17, 2020 17:17:03.82 [0617/171703.820738:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 17:17:03.82 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 17:17:03.86 [14798:14798:0100/000000.864375:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 17, 2020 17:17:03.86 [14798:14798:0100/000000.865578:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 17, 2020 17:17:03.92 [14801:14801:0617/171703.923278:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 17, 2020 17:27:35.17 Opening in existing browser session.
+Jun 17, 2020 17:27:35.18 [0617/172735.187992:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 17:27:35.18 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 17:38:48.04 Opening in existing browser session.
+Jun 17, 2020 17:38:48.05 [0617/173848.056670:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 17:38:48.05 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 17:42:01.81 Opening in existing browser session.
+Jun 17, 2020 17:42:01.83 [0617/174201.836131:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 17:42:01.83 Most likely you need to configure your SUID sandbox correctly
+
+Jun 17, 2020 18:46:20.93 NEW SESSION
+Jun 17, 2020 18:46:20.93 Opening in existing browser session.
+Jun 17, 2020 18:46:20.94 [0617/184620.943041:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 17, 2020 18:46:20.94 Most likely you need to configure your SUID sandbox correctly
+Jun 17, 2020 18:46:21.03 [3584:3584:0617/184621.038366:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 17, 2020 18:46:21.04 [3576:3576:0100/000000.039983:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 17, 2020 18:46:21.04 [3576:3576:0100/000000.040703:ERROR:broker_posix.cc(43)] Invalid node channel message
+
+Jun 18, 2020 12:49:43.08 NEW SESSION
+Jun 18, 2020 12:49:43.08 Opening in existing browser session.
+Jun 18, 2020 12:49:43.12 [0618/124943.119512:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 12:49:43.12 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 13:20:08.15 Opening in existing browser session.
+Jun 18, 2020 13:20:08.16 [0618/132008.166396:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 13:20:08.16 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 13:29:05.42 Opening in existing browser session.
+Jun 18, 2020 13:29:05.43 [0618/132905.437168:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 13:29:05.43 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 13:29:05.49 [5831:5831:0618/132905.495785:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 18, 2020 13:44:32.53 Opening in existing browser session.
+Jun 18, 2020 13:44:32.54 [0618/134432.547178:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 13:44:32.54 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 13:45:56.36 Opening in existing browser session.
+Jun 18, 2020 13:45:56.39 [0618/134556.393221:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 13:45:56.39 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 13:49:19.62 Opening in existing browser session.
+Jun 18, 2020 13:49:19.63 [0618/134919.634082:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 13:49:19.63 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 14:45:21.86 Opening in existing browser session.
+Jun 18, 2020 14:45:21.87 [0618/144521.872102:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 14:45:21.87 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 14:49:47.89 Opening in existing browser session.
+Jun 18, 2020 14:49:47.92 [0618/144947.921941:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 14:49:47.92 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 14:55:25.45 Opening in existing browser session.
+Jun 18, 2020 14:55:25.46 [0618/145525.464639:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 14:55:25.46 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 15:21:21.78 Opening in existing browser session.
+Jun 18, 2020 15:21:21.80 [0618/152121.799820:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 15:21:21.80 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 15:25:21.61 Opening in existing browser session.
+Jun 18, 2020 15:25:21.62 [0618/152521.621243:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 15:25:21.62 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 15:26:35.66 Opening in existing browser session.
+Jun 18, 2020 15:26:35.69 [0618/152635.690058:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 15:26:35.69 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 15:52:08.69 Opening in existing browser session.
+Jun 18, 2020 15:52:08.71 [0618/155208.717524:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 15:52:08.71 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 16:11:36.81 Opening in existing browser session.
+Jun 18, 2020 16:11:36.83 [0618/161136.835531:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 16:11:36.83 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 16:14:54.07 Opening in existing browser session.
+Jun 18, 2020 16:14:54.09 [0618/161454.098102:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 16:14:54.09 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 16:27:26.09 Opening in existing browser session.
+Jun 18, 2020 16:27:26.11 [0618/162726.113950:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 16:27:26.11 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 16:27:26.14 [13226:13226:0618/162726.147129:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 18, 2020 16:27:26.18 [13218:13218:0100/000000.188398:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 18, 2020 16:27:26.18 [13218:13218:0100/000000.189323:ERROR:broker_posix.cc(43)] Invalid node channel message
+
+Jun 18, 2020 21:17:18.53 NEW SESSION
+Jun 18, 2020 21:17:18.53 Opening in existing browser session.
+Jun 18, 2020 21:17:18.55 [0618/211718.554582:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 21:17:18.55 Most likely you need to configure your SUID sandbox correctly
+Jun 18, 2020 21:19:11.33 Opening in existing browser session.
+Jun 18, 2020 21:19:11.36 [0618/211911.360571:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 18, 2020 21:19:11.36 Most likely you need to configure your SUID sandbox correctly
+
+Jun 19, 2020 13:25:55.30 NEW SESSION
+Jun 19, 2020 13:25:55.30 Opening in existing browser session.
+Jun 19, 2020 13:25:55.31 [0619/132555.313366:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 13:25:55.31 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 13:50:32.14 Opening in existing browser session.
+Jun 19, 2020 13:50:32.16 [0619/135032.160996:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 13:50:32.16 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 14:39:10.82 Opening in existing browser session.
+Jun 19, 2020 14:39:10.84 [0619/143910.838235:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 14:39:10.84 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 14:49:38.70 Opening in existing browser session.
+Jun 19, 2020 14:49:38.71 [0619/144938.715020:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 14:49:38.71 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 14:55:07.42 Opening in existing browser session.
+Jun 19, 2020 14:55:07.44 [0619/145507.439793:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 14:55:07.44 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 14:56:40.80 Opening in existing browser session.
+Jun 19, 2020 14:56:40.81 [0619/145640.814001:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 14:56:40.81 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 14:58:40.14 Opening in existing browser session.
+Jun 19, 2020 14:58:40.16 [0619/145840.159321:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 14:58:40.16 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 14:58:40.24 [7616:7616:0100/000000.243178:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 19, 2020 14:58:40.24 [7616:7616:0100/000000.244267:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 19, 2020 14:58:40.27 [7620:7620:0619/145840.277782:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 19, 2020 15:06:17.58 Opening in existing browser session.
+Jun 19, 2020 15:06:17.65 [0619/150617.654975:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 15:06:17.65 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 15:06:17.68 [8146:8146:0100/000000.686253:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 19, 2020 15:06:17.68 [8146:8146:0100/000000.686972:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 19, 2020 15:06:17.69 [8154:8154:0619/150617.690543:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 19, 2020 15:08:55.04 Opening in existing browser session.
+Jun 19, 2020 15:08:55.06 [0619/150855.059539:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 15:08:55.06 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 15:11:19.69 Opening in existing browser session.
+Jun 19, 2020 15:11:19.71 [0619/151119.716462:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 15:11:19.71 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 15:11:19.80 [8606:8606:0100/000000.803587:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+Jun 19, 2020 15:11:19.80 [8609:8609:0619/151119.806117:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 19, 2020 15:11:19.80 [8606:8606:0100/000000.807036:ERROR:broker_posix.cc(43)] Invalid node channel message
+Jun 19, 2020 15:27:36.47 Opening in existing browser session.
+Jun 19, 2020 15:27:36.48 [0619/152736.480209:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 15:27:36.48 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 17:29:20.17 Opening in existing browser session.
+Jun 19, 2020 17:29:20.22 [0619/172920.223852:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 17:29:20.22 Most likely you need to configure your SUID sandbox correctly
+Jun 19, 2020 17:32:35.89 Opening in existing browser session.
+Jun 19, 2020 17:32:35.90 [0619/173235.904813:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 19, 2020 17:32:35.90 Most likely you need to configure your SUID sandbox correctly
+
+Jun 20, 2020 14:20:48.30 NEW SESSION
+Jun 20, 2020 14:20:48.30 Opening in existing browser session.
+Jun 20, 2020 14:20:48.31 [0620/142048.315407:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 20, 2020 14:20:48.31 Most likely you need to configure your SUID sandbox correctly
+Jun 20, 2020 14:26:21.35 Opening in existing browser session.
+Jun 20, 2020 14:26:21.38 [0620/142621.385633:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 20, 2020 14:26:21.38 Most likely you need to configure your SUID sandbox correctly
+Jun 20, 2020 16:43:24.55 Opening in existing browser session.
+Jun 20, 2020 16:43:24.57 [0620/164324.571463:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 20, 2020 16:43:24.57 Most likely you need to configure your SUID sandbox correctly
+
+Jun 20, 2020 21:57:25.90 NEW SESSION
+Jun 20, 2020 21:57:25.90 Opening in existing browser session.
+Jun 20, 2020 21:57:25.91 [0620/215725.913848:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 20, 2020 21:57:25.91 Most likely you need to configure your SUID sandbox correctly
+Jun 20, 2020 22:02:44.70 Opening in existing browser session.
+Jun 20, 2020 22:02:44.72 [0620/220244.728662:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 20, 2020 22:02:44.72 Most likely you need to configure your SUID sandbox correctly
+Jun 20, 2020 22:06:33.26 Opening in existing browser session.
+Jun 20, 2020 22:06:33.27 [0620/220633.276515:ERROR:nacl_helper_linux.cc(308)] NaCl helper process running without a sandbox!
+Jun 20, 2020 22:06:33.27 Most likely you need to configure your SUID sandbox correctly

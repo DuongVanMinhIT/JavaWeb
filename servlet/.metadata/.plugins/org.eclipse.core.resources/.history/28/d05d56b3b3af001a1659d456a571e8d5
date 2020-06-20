@@ -1,0 +1,9 @@
+package com.laptrinhjavaweb.model;
+
+public class CommetModel {
+
+	private String content;
+    private long news_id ;
+    private long user_id;
+	
+}

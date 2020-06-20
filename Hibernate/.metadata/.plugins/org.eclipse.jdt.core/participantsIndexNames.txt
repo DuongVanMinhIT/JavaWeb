@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/minh/Hibernate/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2463269718.index
+/CustomesManager/src

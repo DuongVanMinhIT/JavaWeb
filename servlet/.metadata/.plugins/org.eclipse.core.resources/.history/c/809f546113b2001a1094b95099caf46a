@@ -1,0 +1,15 @@
+package com.laptrinhjavaweb.dao;
+
+import java.util.List;
+
+import com.laptrinhjavaweb.model.NewsModel;
+
+public interface INewsDao extends GenericDao<NewsModel>{
+	NewsModel findOne(Long id);
+	List<NewsModel> findByCategoryId(Long id);
+	Long Insert(NewsModel entity);
+	void update(NewsModel entity);
+	void delete(Long ids);
+	List<NewsModel> FindAll();
+	int getTotalItem();
+}
