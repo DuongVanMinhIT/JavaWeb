@@ -6,7 +6,7 @@ public class NewsModel extends AbstracModel<NewsModel>{
 	private String thumbnail; 
 	private String shortdecription ;
 	private String content ;
-	
+	private String categoryCode;
 	
 	
 	public long getCategory_id() {
@@ -38,6 +38,12 @@ public class NewsModel extends AbstracModel<NewsModel>{
 	}
 	public void setContent(String content) {
 		this.content = content;
+	}
+	public String getCategoryCode() {
+		return categoryCode;
+	}
+	public void setCategoryCode(String categoryCode) {
+		this.categoryCode = categoryCode;
 	}
 	
 	

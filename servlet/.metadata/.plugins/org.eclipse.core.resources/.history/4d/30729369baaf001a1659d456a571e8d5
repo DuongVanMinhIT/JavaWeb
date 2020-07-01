@@ -1,7 +1,0 @@
-package com.laptrinhjavaweb.service;
-
-
-//return funtion Dao
-public interface INewsService {
-
-}

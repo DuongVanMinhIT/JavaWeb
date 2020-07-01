@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.laptrinhjavaweb.model.NewsModel;
+import com.laptrinhjavaweb.model.UserModel;
 import com.laptrinhjavaweb.service.INewsService;
 import com.laptrinhjavaweb.utils.HttpUtil;
+import com.laptrinhjavaweb.utils.SessionUtil;
 @WebServlet(urlPatterns = {"/api-admin-new"})
 public class NewAPI extends HttpServlet {
 
@@ -27,6 +29,7 @@ public class NewAPI extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");//nhan vao
 		resp.setContentType("application/json");//tra ve cliet
 		NewsModel newModel = HttpUtil.of(req.getReader()).toModel(NewsModel.class);//chuyen tu json -> String
+		newModel.setCreatedby(((UserModel) SessionUtil.getInstance().getValue(req, "USERMODEL")).getUsername());
 		newModel = newService.Insert(newModel);//gan vao newModel
 		System.out.println(newModel);
 		mapper.writeValue(resp.getOutputStream(), newModel);// tra ve json cho cline
@@ -38,6 +41,7 @@ public class NewAPI extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		resp.setContentType("application/json");
 		NewsModel UpdateModel = HttpUtil.of(req.getReader()).toModel(NewsModel.class);
+		UpdateModel.setModifiedby(((UserModel) SessionUtil.getInstance().getValue(req, "USERMODEL")).getUsername());
 		UpdateModel = newService.update(UpdateModel);
 		mapper.writeValue(resp.getOutputStream(), UpdateModel);
 	}

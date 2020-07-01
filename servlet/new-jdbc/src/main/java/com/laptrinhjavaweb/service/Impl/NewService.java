@@ -5,7 +5,10 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import com.laptrinhjavaweb.dao.ICategoryDao;
 import com.laptrinhjavaweb.dao.INewsDao;
+import com.laptrinhjavaweb.dao.impl.CategoryDao;
+import com.laptrinhjavaweb.model.CategoryModel;
 import com.laptrinhjavaweb.model.NewsModel;
 import com.laptrinhjavaweb.paging.Pageble;
 import com.laptrinhjavaweb.service.INewsService;
@@ -14,6 +17,9 @@ public class NewService implements  INewsService<NewsModel, Long>{
 	
 	@Inject
 	private INewsDao newsDao;
+	@Inject
+	private ICategoryDao categoryDao;
+	
 	
 	@Override
 	public List<NewsModel> findByCategoryId(Long id) {
@@ -23,7 +29,9 @@ public class NewService implements  INewsService<NewsModel, Long>{
 	@Override
 	public NewsModel Insert(NewsModel entity) {
 		entity.setCreateddate(new Timestamp(System.currentTimeMillis()));
-		entity.setCreatedby("");//ai la nguoi viet bai do
+		//entity.setCreatedby("");//ai la nguoi viet bai do
+		CategoryModel category = categoryDao.findOneByCode(entity.getCategoryCode()); 
+		entity.setCategory_id(category.getId());
 		Long newId = newsDao.Insert(entity);
 		
 		return newsDao.findOne(newId);
@@ -35,7 +43,9 @@ public class NewService implements  INewsService<NewsModel, Long>{
 		entity.setCreateddate(oldNews.getCreateddate());
 		entity.setCreatedby(oldNews.getCreatedby());
 		entity.setModifieddate(new Timestamp(System.currentTimeMillis()));
-		entity.setModifiedby("");
+		//entity.setModifiedby("");
+		CategoryModel category = categoryDao.findOneByCode(entity.getCategoryCode()); 
+		entity.setCategory_id(category.getId());
 		newsDao.update(entity);
 		
 		return newsDao.findOne(entity.getId());
@@ -60,6 +70,14 @@ public class NewService implements  INewsService<NewsModel, Long>{
 		
 		return newsDao.FindAll(pageble);
 	}
+
+	@Override
+	public NewsModel findOne(Long id) {
+		NewsModel newsModel = newsDao.findOne(id);
+		CategoryModel categoryModel = categoryDao.findOne(newsModel.getCategory_id());
+		newsModel.setCategoryCode(categoryModel.getCode());
+		return newsModel;
+	}	
 
 	
 

@@ -12,16 +12,11 @@ public class CategoryService implements ICategoryService<CategoryModel, Long>{
 	@Inject
 	private ICategoryDao category;
 	
-//	public CategoryService() {
-//		category = new CategoryDao();
-//	}
 	
 	@Override
 	public List<CategoryModel> FindAll() {
 		
-		return category.FindAll();
+		return category.FindAll();	
 	}
-
-	
 	
 }

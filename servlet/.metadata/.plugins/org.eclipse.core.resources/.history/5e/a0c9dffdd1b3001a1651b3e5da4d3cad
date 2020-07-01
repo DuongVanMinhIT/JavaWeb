@@ -1,0 +1,7 @@
+package com.laptrinhjavaweb.service.Impl;
+
+import com.laptrinhjavaweb.service.IUserServive;
+
+public class UserService implements IUserServive{
+
+}

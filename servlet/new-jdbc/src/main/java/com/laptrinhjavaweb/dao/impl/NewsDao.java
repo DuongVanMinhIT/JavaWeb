@@ -2,6 +2,8 @@ package com.laptrinhjavaweb.dao.impl;
 
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
+
 import com.laptrinhjavaweb.dao.INewsDao;
 import com.laptrinhjavaweb.mapper.NewMapper;
 import com.laptrinhjavaweb.model.NewsModel;
@@ -54,7 +56,7 @@ public class NewsDao extends AbtractDao<NewsModel> implements INewsDao {
 				+"createddate = ? ," 
 				+"modifieddate = ? ," 
 				+"createdby = ? ," 
-				+"modifiedby = ?,"
+				+"modifiedby = ?"
 				+ "WHERE id= ?";
 		Object[] parameter = new Object[] {
 				entity.getCategory_id(),
@@ -87,9 +89,8 @@ public class NewsDao extends AbtractDao<NewsModel> implements INewsDao {
 
 	@Override
 	public List<NewsModel> FindAll(Pageble pageble) {
-			//String sql = " ";
 			StringBuilder sql = new StringBuilder("select * from news");
-			if(pageble.getSorter() != null ) {
+			if(pageble.getSorter() != null && StringUtils.isNotBlank(pageble.getSorter().getSortName()) && StringUtils.isNotBlank(pageble.getSorter().getSortBy())) {
 				sql.append(" order by "+pageble.getSorter().getSortName()+" "+pageble.getSorter().getSortBy()+" ");
 			}
 			if(pageble.getOffset() != null && pageble.getLimit() != null ) {

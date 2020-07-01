@@ -7,18 +7,25 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import com.laptrinhjavaweb.dao.GenericDao;
 import com.laptrinhjavaweb.mapper.RowMapper;
 
 public class AbtractDao<T> implements GenericDao<T> {
+	
+	ResourceBundle mybundle = ResourceBundle.getBundle("db");
 	public Connection getConnection() {
-
+	
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/servlet";
-			String user = "root";
-			String password = "";
+//			Class.forName("com.mysql.cj.jdbc.Driver");
+//			String url = "jdbc:mysql://localhost:3306/servlet";
+//			String user = "root";
+//			String password = "";
+			Class.forName(mybundle.getString("driverName"));
+			String url = mybundle.getString("url");
+			String user = mybundle.getString("user");
+			String password = mybundle.getString("password");
 			return DriverManager.getConnection(url, user, password);
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -18,7 +18,9 @@ public class AbstracModel<T> {
 	private int totalItem;
 	private String sortName;
 	private String sortBy;
-	
+	private String alert;
+	private String message;
+	private String type;
 	
 	public long getId() {
 		return id;
@@ -97,6 +99,24 @@ public class AbstracModel<T> {
 	}
 	public void setSortBy(String sortBy) {
 		this.sortBy = sortBy;
+	}
+	public String getAlert() {
+		return alert;
+	}
+	public void setAlert(String alert) {
+		this.alert = alert;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 	
 	
