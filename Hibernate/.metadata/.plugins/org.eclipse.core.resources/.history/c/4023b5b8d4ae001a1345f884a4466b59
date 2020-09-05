@@ -1,5 +1,0 @@
-package net.codejava.customer.config;
-
-public class WebmvcConfig {
-
-}

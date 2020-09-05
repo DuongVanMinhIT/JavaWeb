@@ -1,11 +1,12 @@
 package net.codejava.model;
 // Generated Jun 14, 2020 11:46:32 PM by Hibernate Tools 5.2.12.Final
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
-import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
