@@ -58,4 +58,16 @@ public class ProductDaoImp implements IProductDao{
 		return c;
 	}
 
+	@Override
+	public List<Product> findByIds(String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> findByCategoryId(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

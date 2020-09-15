@@ -30,7 +30,6 @@ public class Product {
 	  private Date productDate;
 	  private boolean available;
 	  private int quantity;
-	  private String size;
 	  private String desctiption;
 	  private Double discount;
 	  private int ViewCount;
@@ -82,12 +81,7 @@ public class Product {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	public String getSize() {
-		return size;
-	}
-	public void setSize(String size) {
-		this.size = size;
-	}
+	
 	public String getDesctiption() {
 		return desctiption;
 	}

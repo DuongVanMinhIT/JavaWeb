@@ -88,6 +88,7 @@
   <script src="/static/product/js/jquery.waypoints.min.js"></script>
   <script src="/static/product/js/jquery.stellar.min.js"></script>
   <script src="/static/product/js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="/static/product/js/jquery.magnific-popup.min.js"></script>
   <script src="/static/product/js/aos.js"></script>
   <script src="/static/product/js/jquery.animateNumber.min.js"></script>
@@ -96,3 +97,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="/static/product/js/google-map.js"></script>
   <script src="/static/product/js/main.js"></script>
+  <script src="/static/product/js/shopProduct.js"></script>
+  <script src="/static/product/js/vagetable.js"></script>
+  
+  

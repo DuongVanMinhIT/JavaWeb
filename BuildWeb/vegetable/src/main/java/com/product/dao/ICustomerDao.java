@@ -10,4 +10,5 @@ public interface ICustomerDao {
 	Customer create(Customer entity);
 	void update(Customer entity);
 	Customer delete(int id);
+	Customer finByName(String fullName);
 }

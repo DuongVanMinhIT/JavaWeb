@@ -10,58 +10,52 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.product.dao.ICustomerDao;
-import com.product.entity.Customer;
+import com.product.dao.IBannerDao;
+import com.product.entity.Banner;
 @Transactional(rollbackFor = Exception.class)
 @Repository
-public class CustomeDaoImp implements ICustomerDao{
+public class BannerDaoImp implements IBannerDao{
 	
 	@Autowired
-	SessionFactory factory;
+	private SessionFactory factory;
 	
 	@Override
-	public Customer findById(int id) {
+	public Banner findById(int id) {
 		Session session = this.factory.getCurrentSession();
-		Customer entity = session.find(Customer.class, id);
+		Banner entity = session.find(Banner.class, id);
 		return entity;
 				
 	}
 
 	@Override
-	public List<Customer> findAll() {
-		String sql = "FROM Customer";
+	public List<Banner> findAll() {
+		String sql = "FROM Banner";
 		Session session = this.factory.getCurrentSession();
-		TypedQuery<Customer> query = session.createQuery(sql,Customer.class);
-		List<Customer> list = query.getResultList();
+		TypedQuery<Banner> query = session.createQuery(sql,Banner.class);
+		List<Banner> list = query.getResultList();
 		return list;
 	}
 
 	@Override
-	public Customer create(Customer entity) {
+	public Banner create(Banner entity) {
 		Session session = this.factory.getCurrentSession();
 		session.save(entity);
 		return  entity;
 	}
 
 	@Override
-	public void update(Customer entity) {
+	public void update(Banner entity) {
 		Session session = this.factory.getCurrentSession();
 		session.update(entity);
 		
 	}
 
 	@Override
-	public Customer delete(int id) {
+	public Banner delete(int id) {
 		Session session = this.factory.getCurrentSession();
-		Customer c = session.find(Customer.class, id);
+		Banner c = session.find(Banner.class, id);
 		session.delete(c);
 		return c;
-	}
-
-	@Override
-	public Customer finByName(String fullName) {
-	
-		return findAll().stream().filter(x -> x.getFullName().equals(fullName)).findAny().get();
 	}
 
 }

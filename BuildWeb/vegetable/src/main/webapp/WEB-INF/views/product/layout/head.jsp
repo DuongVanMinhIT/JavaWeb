@@ -25,3 +25,4 @@
     <link rel="stylesheet" href="/static/product/css/flaticon.css">
     <link rel="stylesheet" href="/static/product/css/icomoon.css">
     <link rel="stylesheet" href="/static/product/css/style.css">
+    <link rel="stylesheet" href="/static/product/css/ProductStyler.css">
