@@ -10,6 +10,6 @@ public interface IProductDao {
 	Product create(Product entity);
 	void update(Product entity);
 	Product delete(int id);
-	List<Product> findByIds(String value);
-	List<Product> findByCategoryId(int id);
+	List<Product> findByIds(String ids);
+	List<Product> findByCategoryId(int CategoryId);
 }

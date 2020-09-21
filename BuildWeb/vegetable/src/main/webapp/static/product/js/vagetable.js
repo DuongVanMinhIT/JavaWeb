@@ -46,7 +46,6 @@ $(document).ready(function() {
 			}
 		})
 	});
-	$("#effect").hide();
 	// cart
 	$(".add-to-cart").click(function() {
 		var id = $(this).closest("div").attr("data-id");
@@ -71,7 +70,18 @@ $(document).ready(function() {
 		});
 
 	});
+	$('select').on('change', function (e) {
+		var size = $(this).val();
+		var id = $(this).closest("tr").attr("data-id");
+		console.log(id);
+		$.ajax({
+			url : `/cart/add-size/${id}/${size}`,
+			success : function(response) {
+				console.log("add size true");
+			}
 
+		});
+	});
 	$("tr[data-id] input").on("input", function() {
 		var id = $(this).closest("tr").attr("data-id");
 		var price = $(this).closest("tr").attr("data-price");
@@ -89,21 +99,21 @@ $(document).ready(function() {
 		var amt = qty * price * (1 - discont);
 		$(this).closest("tr").find("#amt").html(amt);
 	});
-	$("tr[data-id] td div select").on("click", "option", function() {
-		var id = $(this).closest("tr").attr("data-id");
-		var size = $(this).val();
-		var pricef = $(this).closest("tr").attr("data-price");
-		var ChangePrice = size * pricef;
-		var price = parseFloat(ChangePrice);
-		console.log(typeof price);
-		$.ajax({
-			url : `/cart/updatePrice/${id}/${price}`,
-			success : function(response) {
-				console.log("update true");
-			}
-		});
-		$(this).closest("tr").find("#chang-price").html(ChangePrice);
-	});
+//	$("tr[data-id] td div select").on("click", "option", function() {
+//		var id = $(this).closest("tr").attr("data-id");
+//		var size = $(this).val();
+//		var pricef = $(this).closest("tr").attr("data-price");
+//		var ChangePrice = size * pricef;
+//		var price = parseFloat(ChangePrice);
+//		console.log(typeof price);
+//		$.ajax({
+//			url : `/cart/updatePrice/${id}/${price}`,
+//			success : function(response) {
+//				console.log("update true");
+//			}
+//		});
+//		$(this).closest("tr").find("#chang-price").html(ChangePrice);
+//	});
 	$(".btn-cart-remove").click(function() {
 		var id = $(this).closest("tr").attr("data-id");
 		$.ajax({
@@ -127,5 +137,8 @@ $(document).ready(function() {
 			}
 		})
 	});
+	//size
+	
+
 
 })

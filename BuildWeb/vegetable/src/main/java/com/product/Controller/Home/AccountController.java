@@ -58,7 +58,8 @@ public class AccountController {
 	}
 	
 	@PostMapping("/account/login")
-	public String login(Model model, @RequestParam("id")Integer id,
+	public String login(Model model, 
+			@RequestParam("id")Integer id,
 			@RequestParam("pw")String pw,
 			@RequestParam(value = "rm", defaultValue = "false")Boolean rm) {
 		Customer user = customerDao.findById(id);
@@ -68,6 +69,7 @@ public class AccountController {
 			model.addAttribute("message", "Invalid password!");
 		}else if(!user.isActivated()) {
 			model.addAttribute("message", "Your account is Inactivated!");
+			model.addAttribute("isActivated", "/account/activate/"+id);
 		}else {
 			model.addAttribute("message", "Login SuccessFully");
 			session.setAttribute("user", user);
@@ -144,8 +146,94 @@ public class AccountController {
 		Customer user = customerDao.findById(id);
 		user.setActivated(true);
 		customerDao.update(user);
+		model.addAttribute("message", "You activate successFully");
 		return "redirect:/account/login";
 	}
+	
+	@PostMapping("/account/forgot")
+	public String forgot(Model model,
+			@RequestParam("id")int id,
+			@RequestParam("email")String email) throws MessagingException {
+		Customer user = customerDao.findById(id);
+		if(user == null) {
+			model.addAttribute("message", "Invalid username");
+		}else if(!email.equals(user.getEmail())) {
+			model.addAttribute("message", "Invalid email address");
+		}else {
+			String from = "c1812m.sem2@gmail.com";
+			String to = user.getEmail();
+			String subject = "Welcome";
+			String url = request.getRequestURL().toString().replace("register", "activate/"+user.getId());
+			String body = "Your password is" + user.getPassWord();
+			MailInfo mail = new MailInfo(from, to, subject, body);
+			mailService.send(mail);
+			model.addAttribute("message", "you password was sent to your inbox");
+			
+		}
+		return "redirect:/account/login";
+	}
+	@GetMapping("/account/change")
+	public String change(Model model) {
+		return "account/change";
+	}
+	@PostMapping("/account/change")
+	public String change(Model model,
+			@RequestParam("id")int id,
+			@RequestParam("pw")String password,
+			@RequestParam("pw1")String password1,
+			@RequestParam("pw2")String password2) throws MessagingException {
+		if(!password1.equals(password2)) {
+			model.addAttribute("message", "Confirm password is not match!");
+		}else {
+			Customer user = customerDao.findById(id);
+			if(user == null) {
+				model.addAttribute("message", "Invalid username");
+			}else if(!password.equals(user.getPassWord())) {
+				model.addAttribute("message", "Invalid password ");
+			}else {
+				user.setPassWord(password2);
+				customerDao.update(user);
+				model.addAttribute("message", "change password Successfully");
+				
+			}
+		}
+		
+		return "redirect:/account/login";
+	}
+	@GetMapping("/account/edit")
+	public String edit(Model model) {
+		Customer user = (Customer) session.getAttribute("user");
+		model.addAttribute("form", user);
+		return "account/edit";
+	}
+	@PostMapping("/account/edit")
+	public String edit(Model model, 
+			@ModelAttribute("form") Customer user,
+			@RequestParam("photo_file") MultipartFile file) throws IllegalStateException, IOException, MessagingException {
+		if(file.isEmpty()) {
+			user.setPhoto("user.png");
+		}else {
+			String dir = app.getRealPath("/static/images/customers");
+			File f = new File(dir, file.getOriginalFilename()); 
+			file.transferTo(f);
+			user.setPhoto(f.getName());
+			
+		}
+		customerDao.update(user);
+		session.setAttribute("user", user);
+		model.addAttribute("message", "update account SuccessFully");
+		return "account/edit";
+	}
+	
+	
+	
+	//dang xuat
+		@GetMapping("/account/logoff")
+		public String logoff() {
+			session.removeAttribute("user");
+			return "redirect:/home/index";
+		}
+
 	
 	
 	

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.product.dao.IOrderDetailDao;
+import com.product.entity.Order;
 import com.product.entity.OrderDetail;
 @Transactional(rollbackFor = Exception.class)
 @Repository
@@ -56,6 +57,16 @@ public class OrderDetailDaoImp2 implements IOrderDetailDao{
 		OrderDetail c = session.find(OrderDetail.class, id);
 		session.delete(c);
 		return c;
+	}
+
+	@Override
+	public List<OrderDetail> findByOrder(Order order) {
+		String sql = "FROM OrderDetail d where d.order.id=:oid";
+		Session session = factory.getCurrentSession();
+		TypedQuery<OrderDetail> query = session.createQuery(sql, OrderDetail.class);
+		query.setParameter("oid", order.getId());
+		List<OrderDetail> list = query.getResultList();
+		return list;
 	}
 
 }

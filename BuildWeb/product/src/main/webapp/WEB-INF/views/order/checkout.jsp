@@ -17,7 +17,7 @@
 </thead>  
 <tbody>
 <c:forEach var="p" items="${sessionScope['scopedTarget.cartService'].itmes}">
- <tr >
+ 	<tr>
  	  <td >${p.id}</td>
       <td>${p.name}</td>
       <td>${p.unitPrice}</td>

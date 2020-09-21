@@ -2,6 +2,7 @@ package com.product.dao;
 
 import java.util.List;
 
+import com.product.entity.Order;
 import com.product.entity.OrderDetail;
 
 public interface IOrderDetailDao {
@@ -10,4 +11,5 @@ public interface IOrderDetailDao {
 	OrderDetail create(OrderDetail entity);
 	void update(OrderDetail entity);
 	OrderDetail delete(int id);
+	List<OrderDetail> findByOrder(Order order);
 }

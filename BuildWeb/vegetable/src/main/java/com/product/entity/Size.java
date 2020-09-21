@@ -14,6 +14,8 @@ public class Size {
 	private int id;
 	private String name;
 	private String nameVN;
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -32,6 +34,8 @@ public class Size {
 	public void setNameVN(String nameVn) {
 		this.nameVN = nameVn;
 	}
+	
+	
 	
 	
 	

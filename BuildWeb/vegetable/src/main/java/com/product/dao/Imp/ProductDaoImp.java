@@ -59,15 +59,22 @@ public class ProductDaoImp implements IProductDao{
 	}
 
 	@Override
-	public List<Product> findByIds(String value) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Product> findByIds(String ids) {
+		String sql = "FROM Product p where p.id IN ("+ids+")";
+		Session session = factory.getCurrentSession();
+		TypedQuery<Product> query = session.createQuery(sql, Product.class);
+		List<Product> list = query.getResultList();
+		return list;
 	}
 
 	@Override
-	public List<Product> findByCategoryId(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Product> findByCategoryId(int categoryId) {
+		String sql = "FROM Product p where p.category.id= :cid";
+		Session session = this.factory.getCurrentSession();
+		TypedQuery<Product> query = session.createQuery(sql,Product.class);
+		query.setParameter("cid", categoryId);
+		List<Product> list = query.getResultList();
+		return list;
 	}
 
 }

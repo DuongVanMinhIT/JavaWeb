@@ -16,14 +16,14 @@
 </thead>  
 <tbody>
 <c:forEach var="d" items="${details}">
- <tr >
+ 	<tr >
  	  <td >${d.product.id}</td>
       <td>${d.product.name}</td>
       <td>${d.unitPrice}</td>
       <td>${d.discount}</td>
       <td>${d.quantity}</td>
       <td >${d.quantity * d.unitPrice *(1 - d.discount)}</td>
- </tr>
+    </tr>
 </c:forEach>
 </tbody>	
 </table>

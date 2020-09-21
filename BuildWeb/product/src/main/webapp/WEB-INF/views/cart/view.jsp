@@ -25,7 +25,7 @@
       <td><input value="${p.quantity}" type = "number" min ="1"></td>
       <td id="amt">${p.quantity * p.unitPrice *(1 - p.discount)}</td>
       <td>
-      	<button class="btn btn-sm btn-warning" id = "btn-cart-remove" ><i class="glyphicon glyphicon-trash"></i></button>
+      	<button class="btn btn-sm btn-warning" id ="btn-cart-remove" ><i class="glyphicon glyphicon-trash"></i></button>
       </td>
     </tr>
 </c:forEach>

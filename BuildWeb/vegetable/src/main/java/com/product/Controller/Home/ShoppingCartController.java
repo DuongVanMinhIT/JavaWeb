@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.product.Serive.CartService;
+import com.product.Serive.SizeService;
 import com.product.dao.ISizeDao;
 import com.product.entity.Size;
 
@@ -19,6 +20,8 @@ public class ShoppingCartController {
 	CartService cartService;
 	@Autowired
 	ISizeDao sizeDao;
+	@Autowired
+	SizeService sizeService;
 	
 	@ResponseBody
 	@RequestMapping("cart/add/{id}")
@@ -26,6 +29,7 @@ public class ShoppingCartController {
 			@PathVariable("id")Integer id,
 			Model model) {
 		cartService.add(id);
+		sizeService.add(id, 1);
 		Object[] info = {cartService.getCount(), cartService.getAmount()};
 		return info;
 	}
